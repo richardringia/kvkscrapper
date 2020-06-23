@@ -4,7 +4,7 @@ import xlsxwriter
 class Excel:
 
     def __init__(self, posts, start, end):
-        workbook = xlsxwriter.Workbook(str(start) + ' - ' + str(end) + '.xlsx')
+        workbook = xlsxwriter.Workbook('output/' + str(start) + ' - ' + str(end) + '.xlsx')
         worksheet = workbook.add_worksheet()
 
         counter = 2
