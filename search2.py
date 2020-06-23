@@ -29,6 +29,11 @@ class Search2:
         self.__zip = zip
         self.__title = title
         self.__url = Url(zip, title)
+        self.__total_pages = 0
+        self.__driver = None
+        self.__page = []
+        self.__counter = 0
+        self.__posts = []
 
         # Create and set the chrome instance for the selenium instance
         PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
